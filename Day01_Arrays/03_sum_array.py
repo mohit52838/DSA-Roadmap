@@ -3,6 +3,19 @@
 def array_sum(arr):
     return sum(arr)
 
+'''def array_sum(arr):
+    total = 0
+    for num in arr:   # loop through each element
+        total += num  # add it to total
+    return total
+'''
+'''def array_sum(arr):
+    total = 0
+    for i in range(len(arr)):
+        total += arr[i]
+    return total
+'''
+
 # Example Run
 arr = [5, 10, 15, 20]
 print("Array:", arr)
