@@ -4,7 +4,7 @@ def linear_search(arr, target):
     for i in range(len(arr)):
         if arr[i] == target:
             return i
-    return print("Not found")
+    return -1
 
 # Example Run
 arr = [4, 2, 9, 1, 7]

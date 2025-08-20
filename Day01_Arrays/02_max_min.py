@@ -3,6 +3,20 @@
 def find_max_min(arr):
     return max(arr), min(arr)
 
+'''def find_max_min(arr):
+    # assume first element is both max and min
+    maximum = arr[0]
+    minimum = arr[0]
+
+    for num in arr:
+        if num > maximum:
+            maximum = num
+        if num < minimum:
+            minimum = num
+
+    return maximum, minimum
+'''
+
 # Example Run
 arr = [7, 2, 9, 4, 1]
 mx, mn = find_max_min(arr)

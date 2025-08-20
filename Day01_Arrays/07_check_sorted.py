@@ -3,6 +3,13 @@
 def is_sorted(arr):
     return all(arr[i] <= arr[i+1] for i in range(len(arr)-1))
 
+'''def is_sorted(arr):
+    for i in range(len(arr) - 1):
+        if arr[i] > arr[i + 1]:
+            return False
+    return True
+'''
+
 # Example Run
 print("Is [1, 2, 3, 4, 5] sorted?", is_sorted([1, 2, 3, 4, 5]))
 print("Is [3, 2, 1] sorted?", is_sorted([3, 2, 1]))
