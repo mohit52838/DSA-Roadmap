@@ -1,0 +1,37 @@
+# Remove Duplicate Words from String
+
+def remove_duplicate_words(s):
+    """Remove duplicate words (preserve order) and print directly."""
+    words = s.split()
+    result = []
+    for w in words:
+        if w not in result:
+            result.append(w)
+
+    # Print without duplicates
+    for word in result:
+        print(word, end=" ")
+
+
+# Alternate version with return
+def remove_duplicate_words_alt(s):
+    """Remove duplicate words (preserve order) and return as string."""
+    seen = set()
+    result = []
+    for w in s.split():
+        if w not in seen:
+            seen.add(w)
+            result.append(w)
+    return " ".join(result)
+
+
+# Example Run
+s = "My name name is Mohit Mohit"
+print("String:", s)
+print("Without duplicates:", end=" ")
+remove_duplicate_words(s)
+
+# User Input
+s = input("\nEnter a string: ")
+print("Without duplicates:", end=" ")
+remove_duplicate_words(s)
